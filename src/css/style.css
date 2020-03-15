@@ -1,0 +1,119 @@
+
+html, body {
+    height: 100%;
+}
+.container-fluid{
+    padding-left:0px;
+    padding-right:0px;
+}
+.main-block-home{
+    height: 100%;
+    padding:0px;
+}
+.heading-block{
+    background-color:#5645FF;
+    height: 90%;
+    padding :0px;
+    padding-bottom:50px;
+    
+
+}
+
+.image-block{
+    width: 110%;
+}
+.content-block{
+    margin:auto 5%;
+    margin-top:5%;
+}
+/* .console-image{
+    width: 100%;
+    background-image: url(../images/console_image.svg);
+    background-size:contain ;
+    background-repeat: no-repeat;
+    height: 0px;
+    padding: 0; /* reset */
+    /* margin-top:3%; 
+    padding-bottom: 90%;
+    border: thin dotted darkgrey;
+    filter: drop-shadow(30px 10px 4px #4444dd);
+   
+    
+    
+    
+} */
+.console-image{
+    filter: drop-shadow(11px 21px 2px #4444dd);
+}
+.heading-text-block{
+    padding-left:10%;
+    color:white;
+    font-family:'CircularStd';
+    font-weight: 800;
+    
+}
+.heading-text{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.secondary-text{
+    opacity:0.5;
+    font-weight: 100;
+    font-size:1.5rem;
+}
+.button{
+    background-color: white; 
+    border:none;
+    border-radius: 10px;
+    color: #4444dd;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    filter: drop-shadow(8px 10px 2px #3030e4bb);
+}
+.btn1{
+    margin-top:30px;
+    margin-right:10px;
+    float: right;
+}
+.btn1:hover{
+    background-color:#ded6e1;
+    color:#0e0ee9bb;
+}
+.second-block{
+    height: 500px;
+    font-family:'CircularStd';
+    font-weight: 400;
+    font-size:2rem;
+    text-align: center;
+    padding-top:40px;
+}
+.third-block{
+    height: 500px;
+    background-color:#7C45FF;
+    color:white;
+    font-family:'CircularStd';
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    padding:30px;
+    font-size:2.5rem;
+}
+.second-block-color{
+    color:#7e7e7e;
+}
+.tldr-heading{
+    font-weight: bold;
+    font-size:5rem;
+}
+.tldr-text1{
+    font-size:1.5rem;
+}
+.tldr-text2{
+    margin-top:50px;font-style:italic
+}
+.tldr-text3{
+    margin-top:70px
+}
