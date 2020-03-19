@@ -61,7 +61,7 @@ export default function Dashboard() {
           </Tab>
           <Tab>
             <div className="active">
-              <span className="favcon choice"></span>Your Choices
+              <span className="favcon choice"></span>Purpose Sent
             </div>
           </Tab>
           <Tab>
@@ -71,12 +71,12 @@ export default function Dashboard() {
           </Tab>
           <Tab>
             <div>
-              <span className="favcon retention"></span>Data Retention
+              <span className="favcon retention"></span>Contact Sent
             </div>
           </Tab>
           <Tab>
             <div>
-              <span className="favcon audience"></span>Specific Audiences
+              <span className="favcon audience"></span>Way of collection
             </div>
           </Tab>
           <Tab>
@@ -86,7 +86,7 @@ export default function Dashboard() {
           </Tab>
           <Tab>
             <div>
-              <span className="favcon policy"></span>Policy Change
+              <span className="favcon policy"></span>Others
             </div>
           </Tab>
         </TabList>

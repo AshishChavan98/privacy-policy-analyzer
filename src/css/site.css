@@ -227,6 +227,7 @@ body{
     height:700px;
     scrollbar-color: rebeccapurple rgb(234, 233, 235);
     outline: none;
+    line-height: 1.6;
 }
 
 ::-webkit-scrollbar {

@@ -57,13 +57,12 @@ export default function SearchBox() {
   React.useEffect(() => {
     if (searchBoxValue[1] !== undefined && searchBoxValue[1] !==null) {
 
-      console.log('searchbox value ',searchBoxValue[1]);
+      
       dispatch(changeStatus(1));
         (async () => {
           const data = {
             "body":searchBoxValue[1]
-          }
-
+          } 
         try{
           const response = await fetch(`${SERVER_URL}/ml`, {
           method: "POST",
@@ -74,7 +73,6 @@ export default function SearchBox() {
         });
         const result = await response.json();
         dispatch(setDashboardValue(result));
-        console.log('%c Dispatch called :','color:red');
 
         dispatch(changeStatus(2));
         }catch(error)
