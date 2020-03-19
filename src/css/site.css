@@ -200,26 +200,83 @@ body{
 .navbar{
     font-family:'CircularStd';
     font-weight: 200;
+    
 }
-.navbar-light{
+.navbar-shadow{
+    box-shadow: 10px 12px 15px #bab8c6;
+}
+.navbar-white{
    color: white;
 }
-.bg-light{
+.bg-purple{
     background-color: #5645ff !important;    
 }
 .nav-link{
     color:white !important;
 }
 .navbar-nav > li{
-    padding-left:30px;
-    padding-right:30px;
+    padding-left:20px;
+    padding-right:20px;
 }
 .nav-link:hover{
     color:#b6b7cc  !important;
 }
 .right-part{
-    width:75%;
+    width:90%;
+    overflow-y:scroll;
+    height:700px;
+    scrollbar-color: rebeccapurple rgb(234, 233, 235);
+    outline: none;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    border:0px solid transparent;
+    border-radius: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(234, 233, 235);
+    /* background: white; */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(99, 50, 190);
+    border:0px solid transparent;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(88, 35, 187);
+  }
+
+
+  ::-moz-scrollbar {
+    width: 8px;
+    border:0px solid transparent;
+    border-radius: 20px;
+  }
+  
+  /* Track */
+  ::-moz-scrollbar-track {
+    background: rgb(234, 233, 235);
+    /* background: rgb(222, 207, 250); */
+  }
+  
+  /* Handle */
+  ::-moz-scrollbar-thumb {
+    background: rgb(99, 50, 190);
+    border:0px solid transparent;
+    border-radius: 30px;
+  }
+  
+  /* Handle on hover */
+  ::-moz-scrollbar-thumb:hover {
+    background: rgb(88, 35, 187);
+  }
 
 .inline-block{
     display: inline-block;
@@ -236,6 +293,7 @@ body{
 .search-info{
     padding:40px;
     margin-left:80px; 
+    padding-bottom:0px;
 }
 .search-illustration{
     margin-top:30px;
@@ -255,4 +313,19 @@ body{
     font-size:2em;
     font-weight: 800;
     padding-top:20px;
+}
+.sentence{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:10px;
+    margin-right:10px;
+
+    border:1px solid rgb(183, 183, 184);
+    border-radius:20px;
+    padding:10px;
+    font-family:'CircularStd';
+    font-weight: 200;
+}
+.contain-drawer{
+    background-color: rgb(137, 116, 211);
 }

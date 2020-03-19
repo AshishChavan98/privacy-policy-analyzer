@@ -1,14 +1,28 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import SearchInfo from "./SearchInfo";
-
+import Loading from './Loading';
 import SearchBox from "./Autocomplete";
 import "../css/bootstrap-4.3.1-dist/css/bootstrap.min.css";
+import { changeStatus } from "../actions";
 
 export default function MainBlock() {
-
   const status = useSelector(state => state.status);
 
+  const showComponent=()=>{
+    if(status===0)
+    {
+      return <SearchInfo />
+    
+    }
+    else if(status===1)
+    {
+      return <Loading />
+    }
+    else{
+      return ''
+    }
+  }
   return (
     <div className="container-fluid main-block">
       <div className="contents">
@@ -17,10 +31,9 @@ export default function MainBlock() {
         <div>
           <SearchBox />
         </div>
-
-        
       </div>
-      {status ? '':<SearchInfo />}
+      {/* {status ? "" : <SearchInfo />} */}
+      { showComponent() }
     </div>
   );
 }

@@ -3,7 +3,7 @@ import '../css/bootstrap-4.3.1-dist/css/bootstrap.min.css'
 import '../css/font.css'
 import console_image from '../images/console_image.png'
 import { BrowserRouter as Route, Redirect, withRouter,useHistory } from 'react-router-dom';
-
+import NavBar from './Navbar';
 import '../css/style.css'
 function Home() {
 
@@ -15,11 +15,12 @@ function Home() {
 
     return (
         <div>
-            <div className="container-fluid main-block-home">
+        
+        <div className="container-fluid main-block-home">
         <div className="container-fluid heading-block">
         
             <div className="container-fluid">
-                <h2>NavBar</h2>
+                    <NavBar />
                 <div className="row content-block">
                   
                   <div className="col-sm-9 col-md-6 col-lg-8">

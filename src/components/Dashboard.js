@@ -18,7 +18,7 @@ export default function Dashboard() {
       <div className="container-fluid content-part">
         <Tabs>
           <div className="row">
-            <div className="col-sm-3">
+            <div className="col-sm-3 col-xs-3">
               <div className="left-part">
                 <div className="sidebar">
                   <TabList>
@@ -68,31 +68,39 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-9">
+            <div className="col-sm-9 col-xs-9">
               <div className="right-part">
                 <TabPanel>
-                  <Collection />
+                  <Collection label={'collectionway_sent'}/>
                 </TabPanel>
                 <TabPanel>
-                  <ThirdParty />
+                  {/* <ThirdParty /> */}
+                  <Collection label={'thirdparty_infoshare_sent'}/>
                 </TabPanel>
                 <TabPanel>
-                  <YourChoices />
+                  {/* <YourChoices /> */}
+                  <Collection label={'purpose_sent'}/>
                 </TabPanel>
                 <TabPanel>
-                  <Security />
+                  {/* <Security /> */}
+                  <Collection label={'security_sent'}/>
                 </TabPanel>
                 <TabPanel>
-                  <DataRetention />
+                  {/* <DataRetention /> */}
+                  <Collection label={'contact_sent'}/>
                 </TabPanel>
                 <TabPanel>
-                  <SpecificAudiences />
+                  {/* <SpecificAudiences /> */}
+                  <Collection label={'collectionway_sent'}/>
                 </TabPanel>
                 <TabPanel>
-                  <Cookies />
+                  {/* <Cookies /> */}
+                  <Collection label={'cookies_sent'}/>
                 </TabPanel>
                 <TabPanel>
-                  <PolicyChange />
+                  {/* <PolicyChange /> */}
+                  <Collection label={'others'}/>
+          
                 </TabPanel>
               </div>
             </div>

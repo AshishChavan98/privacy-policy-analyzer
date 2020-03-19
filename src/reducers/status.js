@@ -1,13 +1,14 @@
-const status = (state=false,action)=>{
+const status = (state=0,action)=>{
     switch(action.type)
     {
         case 'CHANGE_STATUS':
-            return true;
+            return action.payload;
+        case 'SET_STATUS_OFF':
+            return 0;
         default:
-            return false;
+            return 0;
         
     }
-    return false;
 
 }
 
