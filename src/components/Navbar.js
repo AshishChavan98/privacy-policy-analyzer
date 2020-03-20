@@ -1,17 +1,21 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "../css/bootstrap-4.3.1-dist/css/bootstrap.min.css";
 import "../css/style.css";
 import "../css/font.css";
-export default function Navbar({css}) {
+export default function Navbar({ css }) {
   return (
     <div className={css}>
-      <nav className="navbar navbar-expand-sm navbar-white bg-purple justify-content-between" >
+      <nav className="navbar navbar-expand-lg navbar-white bg-purple ">
         <a className="navbar-brand">Privacy Policy Analyzer</a>
+  
 
-        <ul className="navbar-nav">
-        <li className="nav-item">
-            <Link className="nav-link" to='/site'>
+        
+
+
+          <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <Link className="nav-link" to="/site">
               Site
             </Link>
           </li>
@@ -21,12 +25,13 @@ export default function Navbar({css}) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to='/about'>
+            <Link className="nav-link" to="/about">
               About
             </Link>
           </li>
-          
         </ul>
+     
+        
       </nav>
     </div>
   );

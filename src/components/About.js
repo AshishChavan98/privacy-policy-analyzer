@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/Navbar";
 import TestingDrawer from './TestingDrawer';
+
 import '../css/testing.css'
 export default function About() {
   return (
@@ -9,10 +10,10 @@ export default function About() {
         <div className="container-fluid heading-block">
           <div className="container-fluid">
             <NavBar />
-            <div className="row content-block">
+            <div className="row content-block about-block">
               
-                <div className="heading-text-block">
-                  <div className="heading-text">
+                <div className="heading-text-block ">
+                  <div className="heading-text ">
                     This Site helps creating awareness among user regarding privacy policy✨
                   </div>
                   
@@ -25,7 +26,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* <TestingDrawer /> */}
+     
     </div>
   );
 }

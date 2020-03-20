@@ -1,6 +1,7 @@
 import React from "react";
 import { Tab, TabList, Tabs, TabPanel } from "react-tabs";
 import "../css/react-tabs.css";
+import SiteInfo from './SiteInfo';
 //component imports
 
 import Collection from "./DashboardComponents/Collection";
@@ -48,44 +49,44 @@ export default function Dashboard() {
          
             <Tab>
           
-              <div>
+              <div className="block-ruby">
                   <span className="favcon collection"></span>
                 Collection
               </div>
             </Tab>
 
           <Tab>
-            <div>
+            <div className="block-ruby">
               <span className="favcon sharing"></span>3rd party Sharing
             </div>
           </Tab>
           <Tab>
-            <div className="active">
+            <div className="block-ruby">
               <span className="favcon choice"></span>Purpose Sent
             </div>
           </Tab>
           <Tab>
-            <div>
+            <div className="block-ruby">
               <span className="favcon security"></span>Security
             </div>
           </Tab>
           <Tab>
-            <div>
+            <div className="block-ruby">
               <span className="favcon retention"></span>Contact Sent
             </div>
           </Tab>
           <Tab>
-            <div>
+            <div className="block-ruby">
               <span className="favcon audience"></span>Way of collection
             </div>
           </Tab>
           <Tab>
-            <div>
+            <div className="block-ruby">
               <span className="favcon cookie"></span>Cookies
             </div>
           </Tab>
           <Tab>
-            <div>
+            <div className="block-ruby">
               <span className="favcon policy"></span>Others
             </div>
           </Tab>
@@ -94,6 +95,7 @@ export default function Dashboard() {
   );
   return (
     <div>
+     <SiteInfo />
       <div className="container-fluid content-part">
         <Tabs>
           <div className="row">
@@ -178,14 +180,9 @@ const drawerWidth = 300;
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
+    marginLeft:"0px",
   },
 
-  menuButton: {
-    marginRight: 36,
-    [theme.breakpoints.up("sm")]: {
-      display: "none"
-    }
-  },
   hide: {
     display: "none"
   },
@@ -198,14 +195,15 @@ const useStyles = makeStyles(theme => ({
     }
   },
   menuButton: {
-    backgroundColor:'#fff',
-    marginRight: theme.spacing(2),
+    color:'#fff',
+    marginRight: theme.spacing(1),
     [theme.breakpoints.up("sm")]: {
       display: "none"
     }
   },
   drawerOpen: {
     position:'relative',
+    backgroundColor:'#7659ff',
     width: drawerWidth,
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
@@ -215,12 +213,13 @@ const useStyles = makeStyles(theme => ({
   drawerPaper: {
     width: drawerWidth,
     position:'relative',
-    backgroundColor:'inherit',
+    backgroundColor:'transparent',
     color:'inherit',
     borderRight:'inherit'
   },
   drawerClose: {
     position:'relative',
+    backgroundColor:'#7659ff',
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen

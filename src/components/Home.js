@@ -23,7 +23,7 @@ function Home() {
                     <NavBar />
                 <div className="row content-block">
                   
-                  <div className="col-sm-9 col-md-6 col-lg-8">
+                  <div className="col-md-6 col-lg-8">
                     <div className="heading-text-block">
                         <div className="heading-text">
                             Privacy Policy Analyzer Site
@@ -36,7 +36,7 @@ function Home() {
                         </button>
                     </div>
                   </div>
-                  <div className="col-sm-3 col-md-6 col-lg-4">
+                  <div className="col-md-6 col-lg-4">
                     <div className="container-fluid image-block">
                         <img className="img-fluid console-image" src={ console_image } alt="console_image" />
                     </div>
@@ -47,10 +47,13 @@ function Home() {
         </div>
         <div className="second-block">
                 <div className="second-block-color">
-                    How site works:
+                    Click on <b>Go to site</b>
                 </div>
                 <div>
-                    Select Website from drop down 
+                    Then select Website whose privacy policy you want to analyze from drop down 
+                </div>
+                <div className="front-page-search-box">
+
                 </div>
         </div>
         <div className="third-block">
