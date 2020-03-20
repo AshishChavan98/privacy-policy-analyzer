@@ -421,7 +421,8 @@ body{
         padding-left:0px;
     }
     .block-ruby{
-        display: block ruby;
+        /* display: block ruby; */
+        white-space: nowrap;
     }
     /* Right Part */
     .col-sm-9{

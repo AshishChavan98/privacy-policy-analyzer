@@ -9,13 +9,14 @@ export default function SiteInfo() {
     let history=useHistory();
 
     const redirectToPolicy =() =>{
-      window.location.href = value['link'];
+      
+      window.open(value['link'],'__blank');
     }
   return (
     <div className="site-card">
       <div className="flex-container">
         <div className="site-name">{value['name']}</div>
-        <div className="date-collected">{value['date']}</div>
+        <div className="date-collected">Date collected : {value['date']}</div>
         
              <div className="visit-site" onClick={redirectToPolicy}>Privacy policy <LinkIcon /></div>
           
