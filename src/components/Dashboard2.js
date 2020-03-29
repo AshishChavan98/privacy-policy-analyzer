@@ -1,7 +1,6 @@
 import React from "react";
 import { Tab, TabList, Tabs, TabPanel } from "react-tabs";
 import "../css/react-tabs.css";
-import SiteInfo from './SiteInfo';
 //component imports
 
 import Collection from "./DashboardComponents/Collection";
@@ -95,7 +94,6 @@ export default function Dashboard() {
   );
   return (
     <div>
-     <SiteInfo />
       <div className="container-fluid content-part">
         <Tabs>
           <div className="row">

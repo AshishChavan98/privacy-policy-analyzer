@@ -1,8 +1,7 @@
 import React from "react";
 import NavBar from "../components/Navbar";
-import TestingDrawer from './TestingDrawer';
-
 import '../css/testing.css'
+import ReadabilityScore from './ReadabilityScore'
 export default function About() {
   return (
     <div>
@@ -26,7 +25,6 @@ export default function About() {
           </div>
         </div>
       </div>
-     
     </div>
   );
 }

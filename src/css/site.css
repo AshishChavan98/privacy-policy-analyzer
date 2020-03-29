@@ -398,8 +398,10 @@ body{
         border-bottom-left-radius: 0px;
         padding:0px;
     }
-    .react-tabs__tabs{
+    .content-part .react-tabs__tabs{
+        all:unset;
         padding-left:0px;
+        
     }
     .react-tabs__tab-list{
         padding-left:0px;

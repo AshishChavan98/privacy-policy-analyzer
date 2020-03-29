@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.readability-block{
+    
+    margin:50px auto;
+    width:90%;
+    padding: 40px 100px;
+    background-color:white;
+    border-radius:20px;
+    box-shadow: 10px 12px 15px #bab8c6;
+    font-family: "CircularStd";
+
+}
+.center-block{
+    width:60%;
+    margin:0 auto;
+}
+.info-block{
+    margin-top:40px;
+    line-height: 2.7em;
+    font-size: 1.5em;
+    color:#7d7c97;
+}
+.info-count{
+    color:white;
+    padding:5px 10px;
+    border-radius:8px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.orange{
+    background-color: #FF5722;
+}
+.green{
+    background-color: #4CAF50;
+}
+.purple{
+    background-color: #03A9F4;
+}
+.standard-block{
+    margin-top:20px;
+    border:1px solid #d5d5d5;
+    border-radius:10px;
+    padding:20px;
+}
+.standard-block-text{
+    display: flex;
+    justify-content: center;
+    font-size:1.5em;
+}
+.standard-block-text__info{
+    font-family: 'Poppins', sans-serif;
+    font-size:1.2em;
+    color:#4c01d2;
+}
+.HighSchool{
+    background:url('../images/HighSchool.svg') no-repeat;
+}
+.CollegeStudent{
+    background:url('../images/CollegeStudent.svg') no-repeat;
+}
+.CollegeGraduate{
+    background:url('../images/CollegeGraduate.svg') no-repeat;
+}
+.standard-block-image{
+     height:300px;
+    width:400px;
+    background-size: contain;
+    margin:0px auto;
+    margin-top:20px;
+
+}
+
+.score-block{
+    margin-top:50px;
+}
+.score-element{
+    margin:5px;
+    font-size:1.2em;
+    padding:10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    border:1px solid #c4c4c4;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+.score-text{
+    font-family: "CircularStd";
+    font-size:1.5em;
+    margin-bottom:40px;
+    margin-top:100px;
+}
+.score-name{
+    
+    color:#212529;
+    font-weight: 500;
+    margin:3px;
+    padding-bottom:10px;
+}
+.score-count{
+    background-color:crimson;
+    /* background-color: #d77f909e; */
+    margin-left:20px;
+    color:white;
+    /* color: #b92b3f; */
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:20px;
+
+}
+.score-grade{
+    background-color: #8701D2;
+    /* background-color: #6667D566; */
+    margin-left:20px;
+    color:white;
+    /* color: #2C00A6; */
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:20px;
+}
+.temp-bar{
+    margin-top:10px;
+    width:90%;
+    background-color:#ccc;
+    height:14px;
+    border-radius:20px;
+}
+.temp-score-bar{
+    width:13%;
+    height: 100%;
+    background-color: crimson;
+    border-radius:20px;
+}
+.info-on-scores-text{
+    font-family: "CircularStd";
+    margin-top:90px;
+    background-color: #78E6E5BA;
+    color: #00BFBE;
+    padding:5px 15px;
+    width:fit-content;
+    border-radius: 5px;
+}
+.info-on-scores{
+    font-family: "CircularStd";
+    line-height: 1.5em;
+    width:125%;
+    font-size: 19px;
+
+}
+.info-on-scores li{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+@media only screen and (max-width: 900px) {
+    .readability-block{
+        padding:0px;
+    }
+    .center-block{
+        width:90%;
+    }
+    .info-block{
+        font-size:1em;
+        
+    }
+    .info-count{
+        display: block;
+        text-align: center;
+    }
+    .standard-block-text{
+        display:block;
+    }
+    .standard-block-image{
+        height: 230px;
+        width:279px
+    }
+    .score-text{
+        font-size:1.2em;
+    }
+    .score-count{
+        display:block;
+        margin-left:0px;
+        text-align:center;
+        padding:5px 0px;
+        border-radius:8px;
+    }
+    .score-grade{
+        display: block;
+        margin-top:10px;
+        font-size:0.8em;
+        margin-left:0px;
+        padding:10px 9px;
+        border-radius:8px;
+        text-align: center;
+    }
+    .info-on-scores{
+        width:100%;
+        line-height: 1.4em;
+        margin-bottom:30px;
+        padding-bottom:50px;
+        font-size:1.1em;
+    }
+}

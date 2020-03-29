@@ -1,12 +1,12 @@
 import React, { useState, render } from "react";
 import MainBlock from "./MainBlock";
-import Dashboard from "./Dashboard2";
 import { useSelector } from "react-redux";
 import { Prompt } from 'react-router-dom';
 import Navbar from "./Navbar";
 import {useDispatch} from 'react-redux';
 import { changeStatus } from '../actions'
-import MiniDrawer from './Drawer'
+import MiniDrawer from './Drawer';
+import InfoTab from './InfoTab';
 
 export default function Site() {
   
@@ -23,7 +23,7 @@ export default function Site() {
       <Prompt message={leavingSite} />
       <Navbar css={'navbar-shadow'}/>
       <MainBlock />
-      {status>1 ? <Dashboard /> : ''}
+      {status>1 ? <InfoTab /> : ''}
       
       
     </div>
