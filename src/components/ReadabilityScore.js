@@ -16,11 +16,13 @@ export default function ReadabilityScore() {
       let data;
       if (value["name"] === undefined) {
         data = {
-          'body': value["orignal"]
+          'body': value["orignal"],
+          'type':'user'
         };
       } else {
         data = {
-          'body': value["name"]
+          'body': value["name"],
+          'type':'database'
         };
       }
 
