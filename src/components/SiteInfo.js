@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/siteinfo.css";
 import LinkIcon from '@material-ui/icons/Link';
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
 import { useHistory } from "react-router-dom";
 
 export default function SiteInfo() {

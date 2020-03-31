@@ -5,11 +5,15 @@ import Dashboard from "./Dashboard2";
 import SiteInfo from "./SiteInfo";
 import ReadabilityScore from "./ReadabilityScore";
 import { Tab, TabList, Tabs, TabPanel } from "react-tabs";
+import { useSelector } from 'react-redux';
+
 import "../css/infoTab.css";
+
 export default function InfoTab() {
+  const value=useSelector(state=>state.value);
   return (
     <div>
-      <SiteInfo />
+      {value['name']?<SiteInfo />:''}
 
       <div className="infotab">
         <Tabs>

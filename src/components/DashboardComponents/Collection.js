@@ -12,7 +12,7 @@ export default function Collection({label}) {
     },[flag]);
     return (
         <div>
-            {sentences.map(sentence=><PrintComponent key={sentence} sentence={sentence} />)}
+            {sentences.map((sentence,index)=><PrintComponent key={index} sentence={sentence} />)}
         </div>
     )
 }

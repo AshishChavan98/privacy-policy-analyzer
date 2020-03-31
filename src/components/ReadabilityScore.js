@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import "../css/readability.css";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import SchoolIcon from "@material-ui/icons/School";
+
 export default function ReadabilityScore() {
   const SERVER_URL = process.env.REACT_APP_SERVER_URL;
   const value = useSelector(state => state.value);
@@ -10,9 +12,18 @@ export default function ReadabilityScore() {
   const [response, setResponse] = useState([]);
   useEffect(() => {
     (async () => {
-      const data = {
-        "body":value['name']
+      
+      let data;
+      if (value["name"] === undefined) {
+        data = {
+          'body': value["orignal"]
+        };
+      } else {
+        data = {
+          'body': value["name"]
+        };
       }
+
       try {
         const response = await fetch(`${SERVER_URL}/readability`, {
           method: "POST",
@@ -120,7 +131,9 @@ function Readability({ response }) {
             <div className="score-element">
               <div className="score-name">{e[0]}</div>
               <span className="score-count">Score: {e[1]}</span>
-              <span className="score-grade">Grade : {scoreGrade(e[2])}</span>
+              <span className="score-grade">
+                Grade <SchoolIcon />: {scoreGrade(e[2])}
+              </span>
             </div>
           );
         })}

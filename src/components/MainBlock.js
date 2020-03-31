@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import SearchInfo from "./SearchInfo";
 import Loading from './Loading';
 import SearchBox from "./Autocomplete";
+import AddSite from './AddSite';
 import "../css/bootstrap-4.3.1-dist/css/bootstrap.min.css";
 import { changeStatus } from "../actions";
 
@@ -30,6 +31,11 @@ export default function MainBlock() {
 
         <div>
           <SearchBox />
+         
+        </div>
+
+        <div>
+          <AddSite />
         </div>
       </div>
       {/* {status ? "" : <SearchInfo />} */}

@@ -1,0 +1,89 @@
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  cursor: pointer;
+  overflow:scroll;
+}
+
+.overlay-box {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  font-size: 1em;
+  padding:30px 50px;
+  color: black;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:white;
+  border-radius:10px;
+}
+.add-site-button {
+  margin-left: 20px;
+  background-color: #4caf50;
+  padding: 5px 30px;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.add-site-button:hover {
+  background-color: #47a44b;
+}
+.overlay-box-block{
+    display:block;
+}
+.overlay-close{
+    margin-left:100%;
+    color:#777;
+    font-size:2em;
+    width: fit-content;
+}
+.overlay-close:hover{
+    color:black;
+}
+.textarea{
+    margin-top:20px;
+    width: 100%;
+    height:400px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:15px;
+    color:#41414f;
+    background-color: #f9f9f9;
+}
+.overlay-privacy-policy-button{
+    background-color:#5645ff;
+    color:white;
+    padding:10px 20px;
+    margin:10px auto;
+    width:fit-content;
+    border-radius:5px;
+}
+.overlay-privacy-policy-button:hover{
+    background-color:#4c3ce3;
+}
+
+@media only screen and (max-width:900px){
+  .overlay-box{
+    width:90%;
+    padding:10px 20px;
+  }
+  .add-site-button{
+    width:100%;
+    text-align: center;
+    border-radius:4px;
+    margin:20px auto;
+  }
+  .overlay-close{
+    margin-left:95%;
+  }
+}
